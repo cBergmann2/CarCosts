@@ -44,5 +44,12 @@ namespace CarCosts
             // Wenn Sie den NavigationHelper verwenden, der bei einigen Vorlagen zur Verfügung steht,
             // wird dieses Ereignis für Sie behandelt.
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            CdAddFuel cdAddFuel = new CdAddFuel();
+            cdAddFuel.ShowAsync();
+        }
+
     }
 }
