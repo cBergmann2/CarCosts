@@ -27,6 +27,8 @@ namespace CarCosts
     {
         private TransitionCollection transitions;
 
+        public static RefuelingDataContext DB;
+
         /// <summary>
         /// Initialisiert das Singletonanwendungsobjekt.  Dies ist die erste Zeile von erstelltem Code
         /// und daher das logische Äquivalent von main() bzw. WinMain().
@@ -35,6 +37,13 @@ namespace CarCosts
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+            DB = new RefuelingDataContext();
+            if (!DB.DatabaseExists())
+            {
+                DB.CreateDatabase();
+            }
+            
         }
 
         /// <summary>

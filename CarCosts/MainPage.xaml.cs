@@ -29,6 +29,15 @@ namespace CarCosts
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
+        private void LoadDB()
+        {
+            List<RefuelingItem> refulingItems = (from refulingItem in App.DB.RefuelingItems
+                                                     orderby refulingItem.ID
+                                                 select refulingItem).ToList();
+
+            this.DataContext = refulingItems;
+        }
+
         /// <summary>
         /// Wird aufgerufen, wenn diese Seite in einem Rahmen angezeigt werden soll.
         /// </summary>

@@ -15,9 +15,7 @@
 
     <Grid>
         <Pivot Title="Auto Kosten">
-            <PivotItem Header="Füllungen">
-                <Button Content="Button" HorizontalAlignment="Left" Margin="33,0,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-            </PivotItem>
+            <PivotItem Header="Füllungen"/>
             <PivotItem Header="Kosten">
                 <Grid/>
             </PivotItem>

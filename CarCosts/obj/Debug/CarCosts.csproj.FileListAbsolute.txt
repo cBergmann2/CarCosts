@@ -40,3 +40,4 @@ C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.g.cs
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.xaml
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.xbf
+C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\CarCosts.csprojResolveAssemblyReference.cache

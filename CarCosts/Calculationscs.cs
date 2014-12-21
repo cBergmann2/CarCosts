@@ -9,7 +9,7 @@ namespace CarCosts
     class Calculationscs
     {
 
-        private Refueling[] refulings;
+        private RefuelingItem[] refulings;
 
         public static double literPer100Kilometer(double km, double l)
         {
