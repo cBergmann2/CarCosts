@@ -25,8 +25,11 @@ namespace CarCosts
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            if ((App.Current as App).dataManager.getRefulings() != null)
+            {
+                this.TextBlock.Text = (App.Current as App).dataManager.getRefulings().Count.ToString();
+            }
         }
 
         /// <summary>
@@ -45,10 +48,18 @@ namespace CarCosts
             // wird dieses Ereignis für Sie behandelt.
         }
 
-        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             CdAddFuel cdAddFuel = new CdAddFuel();
-            cdAddFuel.ShowAsync();
+            await cdAddFuel.ShowAsync();
+
+            if(cdAddFuel.result == AddFuelResult.AddFuel)
+            {
+                //List of refulings is grown up
+                //update statistcal data
+                this.TextBlock.Text = (App.Current as App).dataManager.getRefulings().Count.ToString();
+            }
+            
         }
 
     }

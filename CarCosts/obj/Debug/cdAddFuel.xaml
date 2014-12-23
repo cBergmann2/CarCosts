@@ -7,10 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Title="Tankfüllung hinzufügen"
-    PrimaryButtonText="sign in"  
-    SecondaryButtonText="cancel"
+    PrimaryButtonText="Hinzufügen"  
+    SecondaryButtonText="Abbrechen"
                                                          
-                                                             >
+                                                                                             >
 
     <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
 
@@ -29,18 +29,18 @@
             <Button Grid.Row="0" Grid.Column="1" Name="bToday" Content="Heute" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
 
             <!-- Amuount-->
-            <TextBox Grid.Row="1" Grid.Column="0" Name="amount" Header="Menge (l)" />
+            <TextBox Grid.Row="1" Grid.Column="0" Name="amount" Header="Menge (l)" InputScope="Number"/>
             <CheckBox Grid.Row="1" Grid.Column="1" Name="completeFilled" Content="vollgetankt" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
         </Grid>
 
         <!-- Cost per Liter -->
-        <TextBox Name="tbCosts" Header="Preis (€/l)"/>
+        <TextBox Name="tbCosts" Header="Preis (€/l)" InputScope="Number"/>
 
         <!-- Sum of Cost -->
-        <TextBox Name="tbSumCosts" Header="Summe"/>
+        <TextBox Name="tbSumCosts" Header="Summe" IsReadOnly="True" InputScope="Number"/>
 
         <!-- Distance -->
-        <TextBox Name="tbDistance" Header="Gefahrene km" IsReadOnly="True"/>
+        <TextBox Name="tbDistance" Header="Gefahrene km" InputScope="Number"/>
 
     </StackPanel>
 </ContentDialog>

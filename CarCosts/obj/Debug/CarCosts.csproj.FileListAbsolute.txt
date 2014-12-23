@@ -35,8 +35,3 @@ C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\qualifiers.
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\ProjectArchitectures.txt
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\bin\Debug\BlankPage1.xbf
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.g.i.cs
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.g.cs
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.xaml
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\BlankPage1.xbf

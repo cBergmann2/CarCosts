@@ -89,6 +89,7 @@
     <Compile Include="CdAddFuel.xaml.cs">
       <DependentUpon>CdAddFuel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataManager.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

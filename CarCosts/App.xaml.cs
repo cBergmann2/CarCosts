@@ -27,6 +27,8 @@ namespace CarCosts
     {
         private TransitionCollection transitions;
 
+        public DataManager dataManager { get; private set; }
+
         /// <summary>
         /// Initialisiert das Singletonanwendungsobjekt.  Dies ist die erste Zeile von erstelltem Code
         /// und daher das logische Äquivalent von main() bzw. WinMain().
@@ -35,6 +37,10 @@ namespace CarCosts
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            
+            //Create instance of DataManager and load appdata
+            this.dataManager = new DataManager();
+            
         }
 
         /// <summary>
@@ -43,7 +49,7 @@ namespace CarCosts
         /// von Suchergebnissen usw. gestartet wird.
         /// </summary>
         /// <param name="e">Details über Startanforderung und -prozess.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -96,6 +102,8 @@ namespace CarCosts
                     throw new Exception("Failed to create initial page");
                 }
             }
+
+            await this.dataManager.loadRefuelingsAsync();
 
             // Sicherstellen, dass das aktuelle Fenster aktiv ist
             Window.Current.Activate();
