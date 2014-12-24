@@ -58,6 +58,12 @@ namespace CarCosts
             }
 #endif
 
+            await this.dataManager.loadRefuelingsAsync();
+
+            // Sicherstellen, dass das aktuelle Fenster aktiv ist
+            Window.Current.Activate();
+
+
             Frame rootFrame = Window.Current.Content as Frame;
 
             // App-Initialisierung nicht wiederholen, wenn das Fenster bereits Inhalte enthält.
@@ -102,11 +108,6 @@ namespace CarCosts
                     throw new Exception("Failed to create initial page");
                 }
             }
-
-            await this.dataManager.loadRefuelingsAsync();
-
-            // Sicherstellen, dass das aktuelle Fenster aktiv ist
-            Window.Current.Activate();
         }
 
         /// <summary>
