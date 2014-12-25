@@ -28,7 +28,7 @@ namespace CarCosts
             this.NavigationCacheMode = NavigationCacheMode.Required;
             if ((App.Current as App).dataManager.getRefulings() != null)
             {
-                this.TextBlock.Text = (App.Current as App).dataManager.getRefulings().Count.ToString();
+                this.updateRefulings();
             }
         }
 
@@ -57,10 +57,34 @@ namespace CarCosts
             {
                 //List of refulings is grown up
                 //update statistcal data
-                this.TextBlock.Text = (App.Current as App).dataManager.getRefulings().Count.ToString();
+                this.updateRefulings();
             }
-            
+
         }
+
+
+        #region Refulings
+
+        private void updateRefulings()
+        {
+            List<Refueling> refuelings = (App.Current as App).dataManager.getRefulings();
+            Calculations calc = new Calculations();
+
+            //Clear current list of refuelings
+            lbRefulings.Items.Clear();
+
+            //Rewrite list of refuelings
+            for (int i = refuelings.Count - 1; i >= 0; i--)
+            {
+                lbRefulings.Items.Add(
+                    refuelings.ElementAt(i).date.ToString() + " - " +
+                    refuelings.ElementAt(i).amount + " l - " +
+                    Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) + "l/100 km"
+                    );
+            }
+        }
+
+        #endregion
 
     }
 }

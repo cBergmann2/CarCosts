@@ -17,7 +17,11 @@
         <Pivot Title="Auto Kosten">
             <PivotItem Header="Füllungen">
                 <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                    <TextBlock Name="TextBlock" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                    <ListBox 
+                        Name="lbRefulings" 
+                        Height="auto" 
+                        Background="Black"
+                        Foreground="White"/>
                 </StackPanel>
             </PivotItem>
 
@@ -25,7 +29,10 @@
                 <Grid/>
             </PivotItem>
             <PivotItem Header="Statistiken">
-                <Grid/>
+                <StackPanel>
+                    <Button Content="l/km" HorizontalAlignment="Center"/>
+                    <Button Content="Kosten" HorizontalAlignment="Center"/>
+                </StackPanel>
             </PivotItem>
         </Pivot>
 
