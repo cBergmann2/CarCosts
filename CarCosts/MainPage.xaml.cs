@@ -76,14 +76,34 @@ namespace CarCosts
             //Rewrite list of refuelings
             for (int i = refuelings.Count - 1; i >= 0; i--)
             {
-                SolidColorBrush brush = new SolidColorBrush();
-                brush.Color = Windows.UI.Colors.Green;
+                double litersPerKilometer = Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) * 100;
+
+
+
+                SolidColorBrush brushBackground = new SolidColorBrush();
+                SolidColorBrush brushForeground = new SolidColorBrush();
+
+                brushForeground.Color = Windows.UI.Colors.Black;
+
+                if (Calculations.evaluateFuelConsumption(litersPerKilometer) <= 0.9)
+                {
+                    brushBackground.Color = Windows.UI.Colors.Green;
+                }
+                else if(Calculations.evaluateFuelConsumption(litersPerKilometer) >= 1.1)
+                {
+                    brushBackground.Color = Windows.UI.Colors.Red;
+                }
+                else
+                {
+                    brushBackground.Color = Windows.UI.Colors.YellowGreen;
+                }
 
                 ListBoxItem item = new ListBoxItem();
-                item.Background = brush;
+                item.Background = brushBackground;
+                item.Foreground = brushForeground;
                 item.Content = refuelings.ElementAt(i).date.ToString() + " - " +
                     refuelings.ElementAt(i).amount + " l - " +
-                    Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) + "l/100 km";
+                    litersPerKilometer/100 + "l/100 km";
 
                 lbRefulings.Items.Add(item);
             }

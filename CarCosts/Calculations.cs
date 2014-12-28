@@ -58,7 +58,14 @@ namespace CarCosts
 
         public static double evaluateFuelConsumption(double litersPerKilometer)
         {
-            return (litersPerKilometer / (App.Current as App).dataManager.getAverageLitersPerKilometers());
+            if ((App.Current as App).dataManager.getAverageLitersPerKilometers() != 0)
+            {
+                return (litersPerKilometer / (App.Current as App).dataManager.getAverageLitersPerKilometers());
+            }
+            else
+            {
+                return 1.0;
+            }
         }
     }
 }

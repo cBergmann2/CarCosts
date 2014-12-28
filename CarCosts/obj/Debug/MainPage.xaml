@@ -29,7 +29,10 @@
                 <Grid/>
             </PivotItem>
             <PivotItem Header="Statistiken">
-                <Grid/>
+                <StackPanel>
+                    <Button Content="l/km" HorizontalAlignment="Center"/>
+                    <Button Content="Kosten" HorizontalAlignment="Center"/>
+                </StackPanel>
             </PivotItem>
         </Pivot>
 
