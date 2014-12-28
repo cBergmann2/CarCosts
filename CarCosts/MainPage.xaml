@@ -30,6 +30,34 @@
             </PivotItem>
             <PivotItem Header="Statistiken">
                 <StackPanel>
+                    <TextBlock FontSize="20">
+                        Sprittverbrauch
+                    </TextBlock>
+                    <TextBox 
+                        Name="tbGoodFuelConsumption"
+                        Margin="10,0,10,0" 
+                        TextWrapping="Wrap" 
+                        Text="" 
+                        VerticalAlignment="Stretch"
+                        Background="Green"
+                        />
+                    <TextBox 
+                        Name="tbAverageFuelConsumption"
+                        Margin="10,0,10,0" 
+                        TextWrapping="Wrap" 
+                        Text="" 
+                        VerticalAlignment="Stretch"
+                        Background="YellowGreen"
+                        />
+                    <TextBox 
+                        Name="tbBadFuelConsumption"
+                        Margin="10,0,10,0" 
+                        TextWrapping="Wrap" 
+                        Text="" 
+                        VerticalAlignment="Stretch"
+                        Background="Red"
+                        />
+                    <TextBlock FontSize="20" Margin="0,20,0,0">Graphen</TextBlock>
                     <Button Content="l/km" HorizontalAlignment="Center"/>
                     <Button Content="Kosten" HorizontalAlignment="Center"/>
                 </StackPanel>

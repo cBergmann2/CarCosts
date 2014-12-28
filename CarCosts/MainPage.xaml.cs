@@ -29,6 +29,7 @@ namespace CarCosts
             if ((App.Current as App).dataManager.getRefulings() != null)
             {
                 this.updateRefulings();
+                this.updateStatistics();
             }
         }
 
@@ -112,6 +113,28 @@ namespace CarCosts
                     litersPerKilometer*100 + "l/100 km";
 
                 lbRefulings.Items.Add(item);
+            }
+        }
+
+        private void updateStatistics()
+        {
+            List<Refueling> refuelings = (App.Current as App).dataManager.getRefulings();
+            switch (refuelings.Count)
+            {
+                case 0:
+                    break;
+                case 1:
+                    this.tbAverageFuelConsumption.Text = Calculations.literPer100Kilometer(refuelings[0].drivenDistance, refuelings[0].amount).ToString();
+                    break;
+                case 2:
+                    this.tbGoodFuelConsumption.Text = (App.Current as App).calculations.getBestFuelConsumption().ToString() + "l/100 km";
+                    this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + "l/100 km";
+                    break;
+                default:
+                    this.tbGoodFuelConsumption.Text = (App.Current as App).calculations.getBestFuelConsumption().ToString() + "l/100 km";
+                    this.tbAverageFuelConsumption.Text = (App.Current as App).calculations.averageLiterPer100Kilometer().ToString() + "l/100 km";
+                    this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + "l/100 km";
+                    break;
             }
         }
 

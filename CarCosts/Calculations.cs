@@ -6,15 +6,63 @@ using System.Threading.Tasks;
 
 namespace CarCosts
 {
-    class Calculations
+    public class Calculations
     {
 
-        private Refueling[] refulings;
+        private List<Refueling> refulings;
+
+        public void setRefuelings(List<Refueling> refuelings)
+        {
+            this.refulings = refuelings;
+        }
+
 
         public static double literPer100Kilometer(double km, double l)
         {
             return l / km * 100;
         }
+
+        public double getBestFuelConsumption() 
+        {
+            double value = -1;
+            if(this.refulings.Count > 0){
+                foreach(Refueling reful in this.refulings){
+                    if(value == -1){
+                        value = Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount);
+                    }
+                    else{
+                        if(value > Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount)){
+                            value = Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount);
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        public double getWorstFuelConsumption()
+        {
+            double value = -1;
+            if (this.refulings.Count > 0)
+            {
+                foreach (Refueling reful in this.refulings)
+                {
+                    if (value == -1)
+                    {
+                        value = Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount);
+                    }
+                    else
+                    {
+                        if (value < Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount))
+                        {
+                            value = Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount);
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
 
         public double averageLiterPer100Kilometer()
         {
@@ -22,13 +70,13 @@ namespace CarCosts
             double sumFuelAmount = 0;
 
             foreach(Refueling reful in refulings){
-                if(reful.isCompleteFilled){
+                //if(reful.isCompleteFilled){
                     sumKm += reful.drivenDistance;
                     sumFuelAmount += reful.amount;
-                }
+                //}
             }
 
-            return sumFuelAmount / sumKm / 100;
+            return sumFuelAmount / sumKm * 100;
         }
 
         public double averageFuelCostsPerYear()

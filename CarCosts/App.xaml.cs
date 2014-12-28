@@ -28,6 +28,7 @@ namespace CarCosts
         private TransitionCollection transitions;
 
         public DataManager dataManager { get; private set; }
+        public Calculations calculations { get; private set; }
 
         /// <summary>
         /// Initialisiert das Singletonanwendungsobjekt.  Dies ist die erste Zeile von erstelltem Code
@@ -40,6 +41,7 @@ namespace CarCosts
             
             //Create instance of DataManager and load appdata
             this.dataManager = new DataManager();
+            this.calculations = new Calculations();
             
         }
 
@@ -58,7 +60,11 @@ namespace CarCosts
             }
 #endif
 
+            //Load existing refuelings
             await this.dataManager.loadRefuelingsAsync();
+
+            //Add refuelings to calculations object
+            this.calculations.setRefuelings(dataManager.getRefulings());
 
             // Sicherstellen, dass das aktuelle Fenster aktiv ist
             Window.Current.Activate();

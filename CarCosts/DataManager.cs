@@ -16,22 +16,24 @@ namespace CarCosts
         private List<Refueling> refuelings;
         private double averageLiterPerKilometer;
 
-        public DataManager()
-        {
-            this.initRefueling();
-        }
-
 
         #region refuling
-
-        private void initRefueling()
-        {
-            this.averageLiterPerKilometer = 0.0;
-        }
 
         public double getAverageLitersPerKilometers()
         {
             return this.averageLiterPerKilometer;
+        }
+
+        private void recalculateAverageLitersPerKilometer()
+        {
+            double sumRefuelungAmount = 0.0;
+            double sumDrivenDistance = 0.0;
+            foreach (Refueling reful in this.refuelings)
+            {
+                sumRefuelungAmount += reful.amount;
+                sumDrivenDistance += reful.drivenDistance;
+            }
+            this.averageLiterPerKilometer = sumRefuelungAmount / sumDrivenDistance;
         }
 
         /// <summary>
@@ -66,7 +68,11 @@ namespace CarCosts
                 using (var stream = await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync(
                        XML_REFUELING_DATA_FILENAME))
                 {
+                    //Set refuelings
                     this.refuelings = (List<Refueling>)serializer.ReadObject(stream);
+                    
+                    //Recalculate average fuel consumption
+                    this.recalculateAverageLitersPerKilometer();
                 }
             }
             catch (FileNotFoundException e)
@@ -89,7 +95,11 @@ namespace CarCosts
         {
             if (Refueling.isComplete(refueling))
             {
+                //Add refueling to List
                 this.refuelings.Add(refueling);
+
+                //Recalculate average fuel consumption
+                this.recalculateAverageLitersPerKilometer();
 
                 //Add refueling successfully
                 return 0;
