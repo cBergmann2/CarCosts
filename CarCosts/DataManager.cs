@@ -14,9 +14,25 @@ namespace CarCosts
 
         private const string XML_REFUELING_DATA_FILENAME = "refuelingData.xml";
         private List<Refueling> refuelings;
+        private double averageLiterPerKilometer;
+
+        public DataManager()
+        {
+            this.initRefueling();
+        }
 
 
         #region refuling
+
+        private void initRefueling()
+        {
+            this.averageLiterPerKilometer = 0.0;
+        }
+
+        public double getAverageLitersPerKilometers()
+        {
+            return this.averageLiterPerKilometer;
+        }
 
         /// <summary>
         /// Saves refuling data in XML file

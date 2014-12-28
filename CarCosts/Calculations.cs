@@ -55,5 +55,10 @@ namespace CarCosts
         {
             return -1;
         }
+
+        public static double evaluateFuelConsumption(double litersPerKilometer)
+        {
+            return (litersPerKilometer / (App.Current as App).dataManager.getAverageLitersPerKilometers());
+        }
     }
 }
