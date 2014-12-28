@@ -13,7 +13,7 @@ namespace CarCosts
 
         public static double literPer100Kilometer(double km, double l)
         {
-            return l / km / 100;
+            return l / km * 100;
         }
 
         public double averageLiterPer100Kilometer()

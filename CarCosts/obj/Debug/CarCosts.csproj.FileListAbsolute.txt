@@ -46,11 +46,3 @@ C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlTo
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\qualifiers.txt
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.pri.xml
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\layout.resfiles
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\layout.resfiles.intermediate
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\Resources.resfiles
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\Resources.resfiles.intermediate
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\pri.resfiles
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\pri.resfiles.intermediate
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\priconfig.xml
-C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\Debug\WinRTXamlToolkit.Controls.DataVisualization\priconfig.xml.intermediate

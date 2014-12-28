@@ -70,40 +70,46 @@ namespace CarCosts
             List<Refueling> refuelings = (App.Current as App).dataManager.getRefulings();
             Calculations calc = new Calculations();
 
+            SolidColorBrush brushBackground = new SolidColorBrush();
+            SolidColorBrush brushForeground = new SolidColorBrush();
+            double litersPerKilometer;
+
             //Clear current list of refuelings
             lbRefulings.Items.Clear();
 
             //Rewrite list of refuelings
             for (int i = refuelings.Count - 1; i >= 0; i--)
             {
-                double litersPerKilometer = Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) * 100;
+                //Get liters per kilometer
+                litersPerKilometer = Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) / 100;
 
-
-
-                SolidColorBrush brushBackground = new SolidColorBrush();
-                SolidColorBrush brushForeground = new SolidColorBrush();
-
+                //Set brush for item foreground
                 brushForeground.Color = Windows.UI.Colors.Black;
 
+                //Set brush for item background 
                 if (Calculations.evaluateFuelConsumption(litersPerKilometer) <= 0.9)
                 {
+                    //Good driving efficiency
                     brushBackground.Color = Windows.UI.Colors.Green;
                 }
                 else if(Calculations.evaluateFuelConsumption(litersPerKilometer) >= 1.1)
                 {
+                    //Bad driving efficiency
                     brushBackground.Color = Windows.UI.Colors.Red;
                 }
                 else
                 {
+                    //Average driving efficiency
                     brushBackground.Color = Windows.UI.Colors.YellowGreen;
                 }
+
 
                 ListBoxItem item = new ListBoxItem();
                 item.Background = brushBackground;
                 item.Foreground = brushForeground;
                 item.Content = refuelings.ElementAt(i).date.ToString() + " - " +
                     refuelings.ElementAt(i).amount + " l - " +
-                    litersPerKilometer/100 + "l/100 km";
+                    litersPerKilometer*100 + "l/100 km";
 
                 lbRefulings.Items.Add(item);
             }
