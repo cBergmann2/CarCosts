@@ -11,12 +11,21 @@ namespace CarCosts
 
         private List<Refueling> refulings;
 
+        /// <summary>
+        /// Set member variable refueling 
+        /// </summary>
+        /// <param name="refuelings"></param>
         public void setRefuelings(List<Refueling> refuelings)
         {
             this.refulings = refuelings;
         }
 
-
+        /// <summary>
+        /// Calculates fuel consumption on 100 km in l/100 km
+        /// </summary>
+        /// <param name="km"></param>
+        /// <param name="l"></param>
+        /// <returns></returns>
         public static double literPer100Kilometer(double km, double l)
         {
             return l / km * 100;
@@ -40,6 +49,10 @@ namespace CarCosts
             return value;
         }
 
+        /// <summary>
+        /// Searches worst fuel consumption in list of refuelings
+        /// </summary>
+        /// <returns>worst fuel consumption in l/100 km</returns>
         public double getWorstFuelConsumption()
         {
             double value = -1;
@@ -63,7 +76,10 @@ namespace CarCosts
             return value;
         }
 
-
+        /// <summary>
+        /// Calculates average fuel consumption
+        /// </summary>
+        /// <returns>average fuel consumption</returns>
         public double averageLiterPer100Kilometer()
         {
             double sumKm = 0;
@@ -79,13 +95,22 @@ namespace CarCosts
             return sumFuelAmount / sumKm * 100;
         }
 
+        /// <summary>
+        /// Calculates average fuel costs per year
+        /// </summary>
+        /// <returns>average fuel costs per year in €</returns>
         public double averageFuelCostsPerYear()
         {
             return -1;
         }
 
+        /// <summary>
+        /// Calculates average fuel costs per month in €
+        /// </summary>
+        /// <returns></returns>
         public double averageFuelCostsPerMounth()
         {
+            //
             return -1;
         }
 
@@ -99,7 +124,7 @@ namespace CarCosts
             return -1;
         }
 
-        public double averageFuelCostsperKm()
+        public double averageFuelCostsPerKm()
         {
             return -1;
         }
