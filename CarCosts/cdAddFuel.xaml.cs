@@ -43,10 +43,21 @@ namespace CarCosts
             //Get user input
             refueling.date = date.Date.DateTime;
 
+            if (!HelperFunctions.convertStringToDouble(amount.Text, ref refueling.amount))
+            {
+                //Error
+            }
 
-            refueling.amount = Convert.ToDouble(amount.Text);
-            refueling.costs = Convert.ToDouble(tbCosts.Text);
-            refueling.drivenDistance = Convert.ToDouble(tbDistance.Text);
+            if (!HelperFunctions.convertStringToDouble(tbCosts.Text, ref refueling.costs))
+            {
+                //Error
+            }
+
+            if (!HelperFunctions.convertStringToDouble(tbDistance.Text, ref refueling.drivenDistance))
+            {
+                //Error
+            }
+            
             refueling.isCompleteFilled = Convert.ToBoolean(completeFilled.IsChecked);
             
             //Add new refueling to refueling list            
