@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -26,11 +27,11 @@ namespace CarCosts
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            if ((App.Current as App).dataManager.getRefulings() != null)
-            {
-                this.updateRefulings();
-                this.updateStatistics();
-            }
+
+                                                                        //Show current refuelings and statistics
+            this.updateRefulings();                                     
+            this.updateStatistics();
+            
         }
 
         /// <summary>
@@ -90,7 +91,9 @@ namespace CarCosts
 
         private void updateRefulings()
         {
-            List<Refueling> refuelings = (App.Current as App).dataManager.getRefulings();
+            DataManager dataManager = new DataManager();
+            ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
+
             Calculations calc = new Calculations();
 
             SolidColorBrush brushBackground = new SolidColorBrush();
@@ -140,7 +143,10 @@ namespace CarCosts
 
         private void updateStatistics()
         {
-            List<Refueling> refuelings = (App.Current as App).dataManager.getRefulings();
+            DataManager dataManager = new DataManager();
+            ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
+
+
             switch (refuelings.Count)
             {
                 case 0:

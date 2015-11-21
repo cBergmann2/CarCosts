@@ -8,11 +8,13 @@ namespace CarCosts
 {
     public class Refueling
     {
-        public DateTime date;           //Date of refueling action
-        public double amount;           //Refueling amount
-        public bool isCompleteFilled;   //true if tank was complete filled
-        public double costs;            //total costs of refueling
-        public double drivenDistance;   //driven distance since last refueling
+        [SQLite.PrimaryKey, SQLite.AutoIncrement]
+        public int Id { get; set; }
+        public DateTime date { get; set; }           //Date of refueling action
+        public double amount { get; set; }           //Refueling amount
+        public bool isCompleteFilled { get; set; }   //true if tank was complete filled
+        public double costs { get; set; }            //total costs of refueling
+        public double drivenDistance { get; set; }   //driven distance since last refueling
 
         public static bool isComplete(Refueling refueling)
         {

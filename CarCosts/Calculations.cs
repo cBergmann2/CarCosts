@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,17 +9,6 @@ namespace CarCosts
 {
     public class Calculations
     {
-
-        private List<Refueling> refulings;
-
-        /// <summary>
-        /// Set member variable refueling 
-        /// </summary>
-        /// <param name="refuelings"></param>
-        public void setRefuelings(List<Refueling> refuelings)
-        {
-            this.refulings = refuelings;
-        }
 
         /// <summary>
         /// Calculates fuel consumption on 100 km in l/100 km
@@ -33,9 +23,15 @@ namespace CarCosts
 
         public double getBestFuelConsumption() 
         {
+            
+            DataManager dataManager = new DataManager();
+            ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
+
             double value = -1;
-            if(this.refulings.Count > 0){
-                foreach(Refueling reful in this.refulings){
+            if (refuelings.Count > 0)
+            {
+                foreach (Refueling reful in refuelings)
+                {
                     if(value == -1){
                         value = Calculations.literPer100Kilometer(reful.drivenDistance, reful.amount);
                     }
@@ -55,10 +51,13 @@ namespace CarCosts
         /// <returns>worst fuel consumption in l/100 km</returns>
         public double getWorstFuelConsumption()
         {
+            DataManager dataManager = new DataManager();
+            ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
+
             double value = -1;
-            if (this.refulings.Count > 0)
+            if (refuelings.Count > 0)
             {
-                foreach (Refueling reful in this.refulings)
+                foreach (Refueling reful in refuelings)
                 {
                     if (value == -1)
                     {
@@ -82,10 +81,14 @@ namespace CarCosts
         /// <returns>average fuel consumption</returns>
         public double averageLiterPer100Kilometer()
         {
+            DataManager dataManager = new DataManager();
+            ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
+
             double sumKm = 0;
             double sumFuelAmount = 0;
 
-            foreach(Refueling reful in refulings){
+            foreach (Refueling reful in refuelings)
+            {
                 //if(reful.isCompleteFilled){
                     sumKm += reful.drivenDistance;
                     sumFuelAmount += reful.amount;

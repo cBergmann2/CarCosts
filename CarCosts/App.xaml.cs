@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -30,6 +31,8 @@ namespace CarCosts
         public DataManager dataManager { get; private set; }
         public Calculations calculations { get; private set; }
 
+        public static string DB_PATH = Path.Combine(Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "CarCosts.sqlite"));//DataBase Name 
+
         /// <summary>
         /// Initialisiert das Singletonanwendungsobjekt.  Dies ist die erste Zeile von erstelltem Code
         /// und daher das logische Äquivalent von main() bzw. WinMain().
@@ -42,7 +45,28 @@ namespace CarCosts
             //Create instance of DataManager and load appdata
             this.dataManager = new DataManager();
             this.calculations = new Calculations();
-            
+
+            if (!CheckFileExists("CarCosts.sqlite").Result)
+            {
+                using (var db = new SQLite.SQLiteConnection(DB_PATH))
+                {
+                    db.CreateTable<Refueling>();
+                }
+            }  
+
+        }
+
+        private async Task<bool> CheckFileExists(string fileName)
+        {
+            try
+            {
+                var store = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync(fileName);
+                return true;
+            }
+            catch
+            {
+            }
+            return false;
         }
 
         /// <summary>
@@ -60,12 +84,7 @@ namespace CarCosts
             }
 #endif
 
-            //Load existing refuelings
-            await this.dataManager.loadRefuelingsAsync();
-
-            //Add refuelings to calculations object
-            this.calculations.setRefuelings(dataManager.getRefulings());
-
+           
             // Sicherstellen, dass das aktuelle Fenster aktiv ist
             Window.Current.Activate();
 

@@ -36,35 +36,50 @@ namespace CarCosts
             this.Closing += ContentDialog_Closing;
         }
 
+        /// <summary>
+        /// Adds refueling to database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
             Refueling refueling = new Refueling();
+            DataManager dataManager = new DataManager();
+
+            double temp = 0.0;
             
             //Get user input
             refueling.date = date.Date.DateTime;
 
-            if (!HelperFunctions.convertStringToDouble(amount.Text, ref refueling.amount))
-            {
-                //Error
-            }
-
-            if (!HelperFunctions.convertStringToDouble(tbCosts.Text, ref refueling.costs))
-            {
-                //Error
-            }
-
-            if (!HelperFunctions.convertStringToDouble(tbDistance.Text, ref refueling.drivenDistance))
-            {
-                //Error
-            }
             
+            if (!HelperFunctions.convertStringToDouble(amount.Text, ref temp))
+            {
+                //Error
+            }
+            refueling.amount = temp;
+
+            if (!HelperFunctions.convertStringToDouble(tbCosts.Text, ref temp))
+            {
+                //Error
+            }
+            refueling.costs = temp;
+
+            if (!HelperFunctions.convertStringToDouble(tbDistance.Text, ref temp))
+            {
+                //Error
+            }
+            refueling.drivenDistance = temp;
+
             refueling.isCompleteFilled = Convert.ToBoolean(completeFilled.IsChecked);
             
-            //Add new refueling to refueling list            
-            (App.Current as App).dataManager.addRefuling(refueling);
+            
+            ////Add new refueling to refueling list            
+            //(App.Current as App).dataManager.addRefuling(refueling);
 
-            //Save new refueling list
-            (App.Current as App).dataManager.saveRefuelings();
+            ////Save new refueling list
+            //(App.Current as App).dataManager.saveRefuelings();
+
+            dataManager.addRefueling(refueling);
 
             result = AddFuelResult.AddFuel;      
         }

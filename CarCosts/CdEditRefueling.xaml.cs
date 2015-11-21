@@ -41,10 +41,12 @@ namespace CarCosts
         private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
             Refueling newRefueling = new Refueling();
+            DataManager dataManager = new DataManager();
 
             //Get user input
             newRefueling.date = date.Date.DateTime;
 
+            /*
             if (!HelperFunctions.convertStringToDouble(amount.Text, ref newRefueling.amount))
             {
                 //Error
@@ -59,13 +61,12 @@ namespace CarCosts
             {
                 //Error
             }
+            */
 
             newRefueling.isCompleteFilled = Convert.ToBoolean(completeFilled.IsChecked);
+
+            dataManager.updateRefueling(newRefueling);
             
-            (App.Current as App).dataManager.editRefueling(oldRefueling, newRefueling);                     //Edit refueling
-
-            (App.Current as App).dataManager.saveRefuelings();                                              //Save refuelings
-
             result = EditRefuelingResult.edit;
         }
 
@@ -75,8 +76,9 @@ namespace CarCosts
         }
 
         private void bDeleteRefueling_Click(object sender, RoutedEventArgs e)
-        {
-            (App.Current as App).dataManager.deleteRefueling(oldRefueling);
+        {            
+            DataManager dataManager = new DataManager();
+            dataManager.deleteRefueling(oldRefueling.Id);
             result = EditRefuelingResult.delete;
         }
 
