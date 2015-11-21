@@ -89,13 +89,18 @@ namespace CarCosts
 
             foreach (Refueling reful in refuelings)
             {
-                //if(reful.isCompleteFilled){
+                if(reful.isCompleteFilled){
                     sumKm += reful.drivenDistance;
                     sumFuelAmount += reful.amount;
-                //}
+                }
             }
 
             return sumFuelAmount / sumKm * 100;
+        }
+
+        public double averageLitersPerKilometers()
+        {
+            return this.averageLiterPer100Kilometer() / 100;
         }
 
         /// <summary>
@@ -132,11 +137,12 @@ namespace CarCosts
             return -1;
         }
 
-        public static double evaluateFuelConsumption(double litersPerKilometer)
+        public double evaluateFuelConsumption(double litersPerKilometer)
         {
-            if ((App.Current as App).dataManager.getAverageLitersPerKilometers() != 0)
+            
+            if (this.averageLitersPerKilometers() != 0)
             {
-                return (litersPerKilometer / (App.Current as App).dataManager.getAverageLitersPerKilometers());
+                return (litersPerKilometer / this.averageLitersPerKilometers());
             }
             else
             {

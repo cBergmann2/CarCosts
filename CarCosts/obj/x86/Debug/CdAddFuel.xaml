@@ -30,7 +30,7 @@
 
             <!-- Amuount-->
             <TextBox Grid.Row="1" Grid.Column="0" Name="amount" Header="Menge (l)" InputScope="Number"/>
-            <CheckBox Grid.Row="1" Grid.Column="1" Name="completeFilled" Content="vollgetankt" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+            <CheckBox Grid.Row="1" Grid.Column="1" Name="completeFilled" Content="vollgetankt" VerticalAlignment="Bottom" HorizontalAlignment="Right" IsChecked="True"/>
         </Grid>
 
         <!-- Cost per Liter -->

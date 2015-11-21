@@ -7,6 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Resources>
+
+        <Style TargetType="ListViewItem" x:Key="ListViewItem_GoodEfficiency">
+            <Setter Property="Background" Value="Green" />
+        </Style>
+
+        <Style TargetType="ListViewItem" x:Key="ListViewItem_AverageEfficiency">
+            <Setter Property="Background" Value="YellowGreen" />
+        </Style>
+
+        <Style TargetType="ListViewItem" x:Key="ListViewItem_BadEfficiency">
+            <Setter Property="Background" Value="Red" />
+        </Style>
+
+    </Page.Resources>
+        
+    
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton
@@ -26,8 +44,8 @@
         <Pivot Title="Auto Kosten" Margin="-10,-1,10,1" SelectionChanged="pivotElementSelectionChanged">
             <PivotItem Name="piRefuelings"  Header="Füllungen">
                 <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                    <ListBox 
-                        Name="lbRefulings" 
+                    <ListView 
+                        Name="lvRefulings" 
                         Height="auto" 
                         Background="Black"
                         Foreground="White"

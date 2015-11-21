@@ -14,8 +14,6 @@ namespace CarCosts
     public class DataManager
     {
 
-        //private const string XML_REFUELING_DATA_FILENAME = "refuelingData.xml";
-        //private List<Refueling> refuelings;
         private double averageLiterPerKilometer;
 
         private SQLiteConnection dbConn;                        //Instance variable for database connection
@@ -174,26 +172,6 @@ namespace CarCosts
                 dbConn.Close();
                 //}); 
             }
-        }
-
-        public double getAverageLitersPerKilometers()
-        {
-            return this.averageLiterPerKilometer;
-        }
-
-        private void recalculateAverageLitersPerKilometer()
-        {
-            DataManager dataManager = new DataManager();
-            ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
-
-            double sumRefuelungAmount = 0.0;
-            double sumDrivenDistance = 0.0;
-            foreach (Refueling reful in refuelings)
-            {
-                sumRefuelungAmount += reful.amount;
-                sumDrivenDistance += reful.drivenDistance;
-            }
-            this.averageLiterPerKilometer = sumRefuelungAmount / sumDrivenDistance;
         }
 
         #endregion

@@ -58,15 +58,25 @@
       <RootProperty Name="Content" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsChecked" />
     </RootType>
     <RootType FullName="CarCosts.CdAddFuel" />
     <RootType FullName="CarCosts.CdEditRefueling" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="BottomAppBar" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="PrimaryCommands" />
     </RootType>
@@ -92,7 +102,7 @@
       <RootProperty Name="Inlines" />
       <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Name" />
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />

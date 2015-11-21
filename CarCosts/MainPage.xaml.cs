@@ -64,6 +64,7 @@ namespace CarCosts
                     //List of refulings is grown up
                     //update statistcal data
                     this.updateRefulings();
+                    this.updateStatistics();
                 }
             }
             else
@@ -72,7 +73,7 @@ namespace CarCosts
                 {
                     //Füllung bearbeiten
                     
-                    int selectedItem = this.lbRefulings.SelectedIndex;  //Index des markierten Elements holen
+                    int selectedItem = this.lvRefulings.SelectedIndex;  //Index des markierten Elements holen
                     Refueling refueling = (App.Current as App).dataManager.getRefueling(selectedItem);
                     CdEditRefueling cdEditRefueling = new CdEditRefueling(refueling);
                     await cdEditRefueling.ShowAsync();
@@ -80,6 +81,7 @@ namespace CarCosts
                     if (cdEditRefueling.result == EditRefuelingResult.delete || cdEditRefueling.result == EditRefuelingResult.edit)
                     {
                         this.updateRefulings();
+                        this.updateStatistics();
                     }
                 }
             }
@@ -101,43 +103,60 @@ namespace CarCosts
             double litersPerKilometer;
 
             //Clear current list of refuelings
-            lbRefulings.Items.Clear();
+            lvRefulings.Items.Clear();
 
             //Rewrite list of refuelings
             for (int i = refuelings.Count - 1; i >= 0; i--)
             {
+
+                ListViewItem item = new ListViewItem();
+                brushForeground.Color = Windows.UI.Colors.Black;
+                
+                //item.Background = brushBackground;
+                //item.Foreground = brushForeground;
+
+                
+
                 //Get liters per kilometer
                 litersPerKilometer = Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) / 100;
 
-                //Set brush for item foreground
-                brushForeground.Color = Windows.UI.Colors.Black;
+                //Set item content
+                item.Content = refuelings.ElementAt(i).date.ToString() + " - " +
+                    refuelings.ElementAt(i).amount + " l - " +
+                    litersPerKilometer * 100 + "l/100 km";
+                
+                
+                //Specify cell background colour based on driving efficiency
+                
 
                 //Set brush for item background 
-                if (Calculations.evaluateFuelConsumption(litersPerKilometer) <= 0.9)
+                if (calc.evaluateFuelConsumption(litersPerKilometer) <= 0.9)
                 {
                     //Good driving efficiency
                     brushBackground.Color = Windows.UI.Colors.Green;
-                }
-                else if(Calculations.evaluateFuelConsumption(litersPerKilometer) >= 1.1)
-                {
-                    //Bad driving efficiency
-                    brushBackground.Color = Windows.UI.Colors.Red;
+                    item.Style = (Style)(this.Resources["ListViewItem_GoodEfficiency"]);
                 }
                 else
                 {
-                    //Average driving efficiency
-                    brushBackground.Color = Windows.UI.Colors.YellowGreen;
+                    if (calc.evaluateFuelConsumption(litersPerKilometer) >= 1.1)
+                    {
+                        //Bad driving efficiency
+                        brushBackground.Color = Windows.UI.Colors.Red;
+                        item.Style = (Style)(this.Resources["ListViewItem_BadEfficiency"]);
+                    }
+                    else
+                    {
+                        //Average driving efficiency
+                        brushBackground.Color = Windows.UI.Colors.YellowGreen;
+                        item.Style = (Style)(this.Resources["ListViewItem_AverageEfficiency"]);
+                    }
                 }
 
+                
 
-                ListBoxItem item = new ListBoxItem();
-                item.Background = brushBackground;
-                item.Foreground = brushForeground;
-                item.Content = refuelings.ElementAt(i).date.ToString() + " - " +
-                    refuelings.ElementAt(i).amount + " l - " +
-                    litersPerKilometer*100 + "l/100 km";
+                lvRefulings.Items.Add(item);
 
-                lbRefulings.Items.Add(item);
+                
             }
         }
 
@@ -181,5 +200,6 @@ namespace CarCosts
             }
         }
 
+        
     }
 }
