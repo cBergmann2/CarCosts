@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\christoph\documents\development\carcosts\carcosts\obj\debug\intermediatexaml\carcosts.exe" HashGuid="87a1b172-48c9-f36b-8a60-6219056170cb" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
     <ReferenceAssembly PathName="c:\users\christoph\documents\development\carcosts\packages\winrtxamltoolkit.controls.datavisualization.windowsphone.1.7.9.0\lib\wpa\winrtxamltoolkit.controls.datavisualization.dll" HashGuid="c9e017dc-b2c6-3f11-43d3-48d57f9fac4b" />
     <ReferenceAssembly PathName="c:\users\christoph\documents\development\carcosts\packages\winrtxamltoolkit.windowsphone.1.7.9.0\lib\wpa\winrtxamltoolkit.dll" HashGuid="ee328e69-b200-3aed-d5c2-1429deafbe53" />
   </ReferenceAssemblyList>

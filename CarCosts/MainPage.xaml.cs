@@ -51,14 +51,36 @@ namespace CarCosts
 
         private async void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            CdAddFuel cdAddFuel = new CdAddFuel();
-            await cdAddFuel.ShowAsync();
 
-            if(cdAddFuel.result == AddFuelResult.AddFuel)
+            if (sender == this.bAddRefueling)
             {
-                //List of refulings is grown up
-                //update statistcal data
-                this.updateRefulings();
+                //Neue Füllung hinzufügen
+                CdAddFuel cdAddFuel = new CdAddFuel();
+                await cdAddFuel.ShowAsync();
+
+                if (cdAddFuel.result == AddFuelResult.AddFuel)
+                {
+                    //List of refulings is grown up
+                    //update statistcal data
+                    this.updateRefulings();
+                }
+            }
+            else
+            {
+                if (sender == bEditRefuelings)
+                {
+                    //Füllung bearbeiten
+                    
+                    int selectedItem = this.lbRefulings.SelectedIndex;  //Index des markierten Elements holen
+                    Refueling refueling = (App.Current as App).dataManager.getRefueling(selectedItem);
+                    CdEditRefueling cdEditRefueling = new CdEditRefueling(refueling);
+                    await cdEditRefueling.ShowAsync();
+
+                    if (cdEditRefueling.result == EditRefuelingResult.delete || cdEditRefueling.result == EditRefuelingResult.edit)
+                    {
+                        this.updateRefulings();
+                    }
+                }
             }
 
         }
@@ -139,6 +161,19 @@ namespace CarCosts
         }
 
         #endregion
+
+        private void pivotElementSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch ((sender as Pivot).SelectedIndex)
+            {
+                case 0:
+                    this.bEditRefuelings.Visibility = Visibility.Visible;
+                    break;
+                default:
+                    this.bEditRefuelings.Visibility = Visibility.Collapsed;
+                    break;
+            }
+        }
 
     }
 }

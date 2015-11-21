@@ -86,6 +86,9 @@
     <Compile Include="CdAddFuel.xaml.cs">
       <DependentUpon>CdAddFuel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CdEditRefueling.xaml.cs">
+      <DependentUpon>CdEditRefueling.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataManager.cs" />
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -113,6 +116,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="CdAddFuel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CdEditRefueling.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

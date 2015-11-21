@@ -9,19 +9,29 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:ConnectionId='1' Label="Tankfüllung hinzufügen" Icon="Add"                           />
+            <AppBarButton x:ConnectionId='1'
+                Name="bAddRefueling"
+                Label="Tankfüllung hinzufügen" 
+                Icon="Add" 
+                                          />
+            <AppBarButton x:ConnectionId='2' 
+                Name="bEditRefuelings"
+                Label="Bearbeiten" 
+                Icon="Edit" 
+                                          />
         </CommandBar>
     </Page.BottomAppBar>
 
     <Grid>
-        <Pivot Title="Auto Kosten">
-            <PivotItem Header="Füllungen">
+        <Pivot x:ConnectionId='3' Title="Auto Kosten" Margin="-10,-1,10,1"                                                >
+            <PivotItem Name="piRefuelings"  Header="Füllungen">
                 <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                     <ListBox 
                         Name="lbRefulings" 
                         Height="auto" 
                         Background="Black"
-                        Foreground="White"/>
+                        Foreground="White"
+                        />
                 </StackPanel>
             </PivotItem>
 

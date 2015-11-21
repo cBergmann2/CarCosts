@@ -98,6 +98,11 @@ namespace CarCosts
                 //Add refueling to List
                 this.refuelings.Add(refueling);
 
+                if (!this.sortRefeuelings())
+                {
+                    return 2;                                   //Problems while resorting refuelings list
+                }
+                
                 //Recalculate average fuel consumption
                 this.recalculateAverageLitersPerKilometer();
 
@@ -107,6 +112,43 @@ namespace CarCosts
 
             //Parameter refueling is not complete
             return 1;
+        }
+
+        public bool editRefueling(Refueling oldRefueling, Refueling newRefueling)
+        {
+            if (!this.sortRefeuelings())
+            {
+                return false;
+            }
+            return false;
+        }
+
+        public bool deleteRefueling(Refueling refueling)
+        {
+            if (this.refuelings.Remove(refueling))
+            {
+                return this.sortRefeuelings();
+            }
+
+            return false;
+        }
+
+        public Refueling getRefueling(int index)
+        {
+            return this.refuelings.ElementAt(index);
+        }
+
+        /// <summary>
+        /// Sortiert die Liste refuelings aufsteigend, nach dem Datum 
+        /// </summary>
+        /// <returns></returns>
+        private bool sortRefeuelings()
+        {
+            this.refuelings.Sort(delegate(Refueling r1, Refueling r2)
+            {
+                return r1.date.CompareTo(r2.date);
+            });
+            return true;
         }
 
         #endregion
