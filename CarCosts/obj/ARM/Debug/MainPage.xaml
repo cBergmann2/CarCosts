@@ -1,0 +1,104 @@
+﻿<Page
+    x:Class="CarCosts.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CarCosts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Resources>
+
+        <Style TargetType="ListViewItem" x:Key="ListViewItem_GoodEfficiency">
+            <Setter Property="Background" Value="Green" />
+        </Style>
+
+        <Style TargetType="ListViewItem" x:Key="ListViewItem_AverageEfficiency">
+            <Setter Property="Background" Value="YellowGreen" />
+        </Style>
+
+        <Style TargetType="ListViewItem" x:Key="ListViewItem_BadEfficiency">
+            <Setter Property="Background" Value="Red" />
+        </Style>
+
+    </Page.Resources>
+        
+    
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='1'
+                Name="bAddRefueling"
+                Label="Tankfüllung hinzufügen" 
+                Icon="Add" 
+                                          />
+            <AppBarButton x:ConnectionId='2' 
+                Name="bEditRefuelings"
+                Label="Bearbeiten" 
+                Icon="Edit" 
+                                          />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Pivot x:ConnectionId='3' Title="Auto Kosten" Margin="-10,-1,10,1"                                                >
+            <PivotItem Name="piRefuelings"  Header="Füllungen">
+                <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <ListView 
+                        Name="lvRefulings" 
+                        Height="auto" 
+                        Background="Black"
+                        Foreground="White"
+                        />
+                </StackPanel>
+            </PivotItem>
+
+            <PivotItem Header="Kosten">
+                <Grid/>
+            </PivotItem>
+            <PivotItem Header="Statistiken">
+                <StackPanel>
+                    <TextBlock FontSize="20">
+                        Sprittverbrauch
+                    </TextBlock>
+                    
+                    <TextBox 
+                        Name="tbGoodFuelConsumption"
+                        Margin="10,0,10,0" 
+                        TextWrapping="Wrap" 
+                        Text="" 
+                        VerticalAlignment="Stretch"
+                        Background="Green"
+                        />
+                    <TextBox 
+                        Name="tbAverageFuelConsumption"
+                        Margin="10,0,10,0" 
+                        TextWrapping="Wrap" 
+                        Text="" 
+                        VerticalAlignment="Stretch"
+                        Background="YellowGreen"
+                        />
+                    <TextBox 
+                        Name="tbBadFuelConsumption"
+                        Margin="10,0,10,0" 
+                        TextWrapping="Wrap" 
+                        Text="" 
+                        VerticalAlignment="Stretch"
+                        Background="Red"
+                        />
+                    <TextBlock FontSize="20" Margin="0,20,0,0">Graphen</TextBlock>
+                    <Button Content="l/km" HorizontalAlignment="Center"/>
+                    <Button Content="Kosten" HorizontalAlignment="Center"/>
+
+                    <Charting:Chart x:Name="chart">
+                        
+                    </Charting:Chart>
+                    
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+
+    </Grid>
+</Page>
+

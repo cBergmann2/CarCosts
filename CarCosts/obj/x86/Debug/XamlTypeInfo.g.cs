@@ -148,7 +148,7 @@ namespace CarCosts.CarCosts_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[13];
             _typeNameTable[0] = "CarCosts.CdAddFuel";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
@@ -158,11 +158,12 @@ namespace CarCosts.CarCosts_XamlTypeInfo
             _typeNameTable[6] = "Object";
             _typeNameTable[7] = "CarCosts.CdEditRefueling";
             _typeNameTable[8] = "CarCosts.EditRefuelingResult";
-            _typeNameTable[9] = "CarCosts.MainPage";
-            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[9] = "CarCosts.StringFormatConverter";
+            _typeNameTable[10] = "CarCosts.MainPage";
+            _typeNameTable[11] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[12] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[13];
             _typeTable[0] = typeof(global::CarCosts.CdAddFuel);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
@@ -172,9 +173,10 @@ namespace CarCosts.CarCosts_XamlTypeInfo
             _typeTable[6] = typeof(global::System.Object);
             _typeTable[7] = typeof(global::CarCosts.CdEditRefueling);
             _typeTable[8] = typeof(global::CarCosts.EditRefuelingResult);
-            _typeTable[9] = typeof(global::CarCosts.MainPage);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[9] = typeof(global::CarCosts.StringFormatConverter);
+            _typeTable[10] = typeof(global::CarCosts.MainPage);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -210,7 +212,8 @@ namespace CarCosts.CarCosts_XamlTypeInfo
         }
 
         private object Activate_0_CdAddFuel() { return new global::CarCosts.CdAddFuel(); }
-        private object Activate_9_MainPage() { return new global::CarCosts.MainPage(); }
+        private object Activate_9_StringFormatConverter() { return new global::CarCosts.StringFormatConverter(); }
+        private object Activate_10_MainPage() { return new global::CarCosts.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -276,18 +279,25 @@ namespace CarCosts.CarCosts_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  CarCosts.MainPage
-                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
+            case 9:   //  CarCosts.StringFormatConverter
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_9_StringFormatConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Controls.Page
+            case 10:   //  CarCosts.MainPage
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.UserControl
+            case 12:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

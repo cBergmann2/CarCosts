@@ -1,0 +1,48 @@
+﻿<ContentDialog x:ConnectionId='1'
+    x:Class="CarCosts.CdEditRefueling"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CarCosts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Tankfüllung hinzufügen"
+    PrimaryButtonText="Bearbeiten"  
+    SecondaryButtonText="Abbrechen"
+                                                         
+                                                                                             >
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Date -->
+            <DatePicker Grid.Row="0" Grid.Column="0" Name="date" Header="Datum"/>
+            <Button Grid.Row="0" Grid.Column="1" Name="bToday" Content="Heute" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+
+            <!-- Amuount-->
+            <TextBox Grid.Row="1" Grid.Column="0" Name="amount" Header="Menge (l)" InputScope="Number"/>
+            <CheckBox Grid.Row="1" Grid.Column="1" Name="completeFilled" Content="vollgetankt" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        </Grid>
+
+        <!-- Cost per Liter -->
+        <TextBox Name="tbCosts" Header="Preis (€/l)" InputScope="Number"/>
+
+        <!-- Sum of Cost -->
+        <TextBox Name="tbSumCosts" Header="Summe" IsReadOnly="True" InputScope="Number"/>
+
+        <!-- Distance -->
+        <TextBox Name="tbDistance" Header="Gefahrene km" InputScope="Number"/>
+
+        <Button x:ConnectionId='2' Name="bDeleteRefueling"  Content="Tankfuellung löschen" HorizontalAlignment="Stretch"                               />
+    </StackPanel>
+</ContentDialog>
+

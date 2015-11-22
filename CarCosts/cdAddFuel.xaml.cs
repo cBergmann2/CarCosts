@@ -71,7 +71,8 @@ namespace CarCosts
             refueling.drivenDistance = temp;
 
             refueling.isCompleteFilled = Convert.ToBoolean(completeFilled.IsChecked);
-            
+
+            refueling.calculateLiterPer100Kilometer();
             
             ////Add new refueling to refueling list            
             //(App.Current as App).dataManager.addRefuling(refueling);

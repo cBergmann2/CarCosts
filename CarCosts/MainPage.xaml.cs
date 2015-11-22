@@ -72,7 +72,7 @@ namespace CarCosts
                 if (sender == bEditRefuelings)
                 {
                     //Füllung bearbeiten
-                    
+                    /*
                     int selectedItem = this.lvRefulings.SelectedIndex;  //Index des markierten Elements holen
                     Refueling refueling = (App.Current as App).dataManager.getRefueling(selectedItem);
                     CdEditRefueling cdEditRefueling = new CdEditRefueling(refueling);
@@ -83,6 +83,7 @@ namespace CarCosts
                         this.updateRefulings();
                         this.updateStatistics();
                     }
+                     */
                 }
             }
 
@@ -96,68 +97,8 @@ namespace CarCosts
             DataManager dataManager = new DataManager();
             ObservableCollection<Refueling> refuelings = dataManager.getAllRefuelings();               //Get all refuelings from database
 
-            Calculations calc = new Calculations();
-
-            SolidColorBrush brushBackground = new SolidColorBrush();
-            SolidColorBrush brushForeground = new SolidColorBrush();
-            double litersPerKilometer;
-
-            //Clear current list of refuelings
-            lvRefulings.Items.Clear();
-
-            //Rewrite list of refuelings
-            for (int i = refuelings.Count - 1; i >= 0; i--)
-            {
-
-                ListViewItem item = new ListViewItem();
-                brushForeground.Color = Windows.UI.Colors.Black;
-                
-                //item.Background = brushBackground;
-                //item.Foreground = brushForeground;
-
-                
-
-                //Get liters per kilometer
-                litersPerKilometer = Calculations.literPer100Kilometer(refuelings.ElementAt(i).drivenDistance, refuelings.ElementAt(i).amount) / 100;
-
-                //Set item content
-                item.Content = refuelings.ElementAt(i).date.ToString() + " - " +
-                    refuelings.ElementAt(i).amount + " l - " +
-                    litersPerKilometer * 100 + "l/100 km";
-                
-                
-                //Specify cell background colour based on driving efficiency
-                
-
-                //Set brush for item background 
-                if (calc.evaluateFuelConsumption(litersPerKilometer) <= 0.9)
-                {
-                    //Good driving efficiency
-                    brushBackground.Color = Windows.UI.Colors.Green;
-                    item.Style = (Style)(this.Resources["ListViewItem_GoodEfficiency"]);
-                }
-                else
-                {
-                    if (calc.evaluateFuelConsumption(litersPerKilometer) >= 1.1)
-                    {
-                        //Bad driving efficiency
-                        brushBackground.Color = Windows.UI.Colors.Red;
-                        item.Style = (Style)(this.Resources["ListViewItem_BadEfficiency"]);
-                    }
-                    else
-                    {
-                        //Average driving efficiency
-                        brushBackground.Color = Windows.UI.Colors.YellowGreen;
-                        item.Style = (Style)(this.Resources["ListViewItem_AverageEfficiency"]);
-                    }
-                }
-
-                
-
-                lvRefulings.Items.Add(item);
-
-                
-            }
+            lbRefulings.ItemsSource = refuelings.Reverse().ToList();                                   //Bind refulings in reverse order to ListBox
+            
         }
 
         private void updateStatistics()
@@ -171,16 +112,16 @@ namespace CarCosts
                 case 0:
                     break;
                 case 1:
-                    this.tbAverageFuelConsumption.Text = Calculations.literPer100Kilometer(refuelings[0].drivenDistance, refuelings[0].amount).ToString();
+                    this.tbAverageFuelConsumption.Text = Calculations.literPer100Kilometer(refuelings[0].drivenDistance, refuelings[0].amount).ToString() + " l/100 km";
                     break;
                 case 2:
-                    this.tbGoodFuelConsumption.Text = (App.Current as App).calculations.getBestFuelConsumption().ToString() + "l/100 km";
-                    this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + "l/100 km";
+                    this.tbGoodFuelConsumption.Text = (App.Current as App).calculations.getBestFuelConsumption().ToString() + " l/100 km";
+                    this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + " l/100 km";
                     break;
                 default:
-                    this.tbGoodFuelConsumption.Text = (App.Current as App).calculations.getBestFuelConsumption().ToString() + "l/100 km";
-                    this.tbAverageFuelConsumption.Text = (App.Current as App).calculations.averageLiterPer100Kilometer().ToString() + "l/100 km";
-                    this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + "l/100 km";
+                    this.tbGoodFuelConsumption.Text = (App.Current as App).calculations.getBestFuelConsumption().ToString() + " l/100 km";
+                    this.tbAverageFuelConsumption.Text = (App.Current as App).calculations.averageLiterPer100Kilometer().ToString() + " l/100 km";
+                    this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + " l/100 km";
                     break;
             }
         }
