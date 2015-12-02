@@ -148,7 +148,7 @@ namespace CarCosts.CarCosts_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[29];
+            _typeNameTable = new string[47];
             _typeNameTable[0] = "CarCosts.CdAddFuel";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
@@ -158,28 +158,46 @@ namespace CarCosts.CarCosts_XamlTypeInfo
             _typeNameTable[6] = "Object";
             _typeNameTable[7] = "CarCosts.CdEditRefueling";
             _typeNameTable[8] = "CarCosts.EditRefuelingResult";
-            _typeNameTable[9] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
-            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[11] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
-            _typeNameTable[12] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
-            _typeNameTable[13] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
-            _typeNameTable[14] = "System.Collections.ObjectModel.Collection`1<Object>";
-            _typeNameTable[15] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[16] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
-            _typeNameTable[17] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
-            _typeNameTable[18] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[20] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
-            _typeNameTable[21] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[22] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[23] = "Windows.UI.Xaml.Style";
-            _typeNameTable[24] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
-            _typeNameTable[25] = "Windows.UI.Xaml.ResourceDictionary";
-            _typeNameTable[26] = "CarCosts.MainPage";
-            _typeNameTable[27] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[28] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[9] = "CarCosts.StringFormatConverter";
+            _typeNameTable[10] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
+            _typeNameTable[11] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[12] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
+            _typeNameTable[13] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
+            _typeNameTable[14] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
+            _typeNameTable[15] = "System.Collections.ObjectModel.Collection`1<Object>";
+            _typeNameTable[16] = "Windows.UI.Xaml.Style";
+            _typeNameTable[17] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[18] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
+            _typeNameTable[19] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
+            _typeNameTable[20] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[21] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[22] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
+            _typeNameTable[23] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[24] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
+            _typeNameTable[26] = "Windows.UI.Xaml.ResourceDictionary";
+            _typeNameTable[27] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries";
+            _typeNameTable[28] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>";
+            _typeNameTable[29] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
+            _typeNameTable[30] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
+            _typeNameTable[31] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
+            _typeNameTable[32] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
+            _typeNameTable[33] = "String";
+            _typeNameTable[34] = "Boolean";
+            _typeNameTable[35] = "Windows.UI.Xaml.Media.PointCollection";
+            _typeNameTable[36] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
+            _typeNameTable[37] = "System.Nullable`1<Int32>";
+            _typeNameTable[38] = "Windows.UI.Xaml.Data.Binding";
+            _typeNameTable[39] = "System.Collections.IEnumerable";
+            _typeNameTable[40] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
+            _typeNameTable[41] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
+            _typeNameTable[42] = "TimeSpan";
+            _typeNameTable[43] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
+            _typeNameTable[44] = "CarCosts.MainPage";
+            _typeNameTable[45] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[46] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[29];
+            _typeTable = new global::System.Type[47];
             _typeTable[0] = typeof(global::CarCosts.CdAddFuel);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
@@ -189,26 +207,44 @@ namespace CarCosts.CarCosts_XamlTypeInfo
             _typeTable[6] = typeof(global::System.Object);
             _typeTable[7] = typeof(global::CarCosts.CdEditRefueling);
             _typeTable[8] = typeof(global::CarCosts.EditRefuelingResult);
-            _typeTable[9] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[11] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
-            _typeTable[12] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
-            _typeTable[13] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
-            _typeTable[14] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
-            _typeTable[15] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[16] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
-            _typeTable[17] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
-            _typeTable[18] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[20] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
-            _typeTable[21] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[22] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[23] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[24] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
-            _typeTable[25] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
-            _typeTable[26] = typeof(global::CarCosts.MainPage);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[9] = typeof(global::CarCosts.StringFormatConverter);
+            _typeTable[10] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[12] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
+            _typeTable[13] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
+            _typeTable[14] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
+            _typeTable[15] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[17] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[18] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
+            _typeTable[19] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
+            _typeTable[20] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[21] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[22] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
+            _typeTable[23] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[24] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
+            _typeTable[26] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
+            _typeTable[27] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries);
+            _typeTable[28] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>);
+            _typeTable[29] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
+            _typeTable[30] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
+            _typeTable[31] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
+            _typeTable[32] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
+            _typeTable[33] = typeof(global::System.String);
+            _typeTable[34] = typeof(global::System.Boolean);
+            _typeTable[35] = typeof(global::Windows.UI.Xaml.Media.PointCollection);
+            _typeTable[36] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
+            _typeTable[37] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[38] = typeof(global::Windows.UI.Xaml.Data.Binding);
+            _typeTable[39] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[40] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
+            _typeTable[41] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
+            _typeTable[42] = typeof(global::System.TimeSpan);
+            _typeTable[43] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
+            _typeTable[44] = typeof(global::CarCosts.MainPage);
+            _typeTable[45] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[46] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -244,29 +280,25 @@ namespace CarCosts.CarCosts_XamlTypeInfo
         }
 
         private object Activate_0_CdAddFuel() { return new global::CarCosts.CdAddFuel(); }
-        private object Activate_9_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
-        private object Activate_11_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
-        private object Activate_13_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
-        private object Activate_14_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
-        private object Activate_15_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_18_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_21_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_24_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
-        private object Activate_26_MainPage() { return new global::CarCosts.MainPage(); }
-        private void VectorAdd_11_Collection(object instance, object item)
+        private object Activate_9_StringFormatConverter() { return new global::CarCosts.StringFormatConverter(); }
+        private object Activate_10_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
+        private object Activate_12_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
+        private object Activate_14_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
+        private object Activate_15_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
+        private object Activate_17_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_20_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_21_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_23_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
+        private object Activate_27_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
+        private object Activate_44_MainPage() { return new global::CarCosts.MainPage(); }
+        private void VectorAdd_12_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_13_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
-            var newItem = (global::System.Object)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_14_Collection(object instance, object item)
+        private void VectorAdd_14_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
@@ -274,35 +306,41 @@ namespace CarCosts.CarCosts_XamlTypeInfo
         }
         private void VectorAdd_15_Collection(object instance, object item)
         {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
+            var newItem = (global::System.Object)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_17_Collection(object instance, object item)
+        {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_18_ObservableCollection(object instance, object item)
+        private void VectorAdd_20_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_19_Collection(object instance, object item)
+        private void VectorAdd_21_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_21_ObservableCollection(object instance, object item)
+        private void VectorAdd_23_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_22_ReadOnlyCollection(object instance, object item)
+        private void VectorAdd_24_ReadOnlyCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_24_Collection(object instance, object item)
+        private void VectorAdd_25_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.ResourceDictionary>)instance;
             var newItem = (global::Windows.UI.Xaml.ResourceDictionary)item;
@@ -373,63 +411,74 @@ namespace CarCosts.CarCosts_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
+            case 9:   //  CarCosts.StringFormatConverter
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_9_StringFormatConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_9_Chart;
+                userType.Activator = Activate_10_Chart;
                 userType.SetContentPropertyName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series");
                 userType.AddMemberName("Series");
+                userType.AddMemberName("Title");
+                userType.AddMemberName("LegendStyle");
                 userType.AddMemberName("Axes");
                 userType.AddMemberName("ActualAxes");
                 userType.AddMemberName("ChartAreaStyle");
                 userType.AddMemberName("LegendItems");
-                userType.AddMemberName("LegendStyle");
                 userType.AddMemberName("LegendTitle");
                 userType.AddMemberName("PlotAreaStyle");
                 userType.AddMemberName("Palette");
-                userType.AddMemberName("Title");
                 userType.AddMemberName("TitleStyle");
                 xamlType = userType;
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Controls.Control
+            case 11:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
+            case 12:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_11_Collection;
+                userType.CollectionAdd = VectorAdd_12_Collection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
+            case 13:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("LegendItems");
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
+            case 14:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Object>"));
-                userType.CollectionAdd = VectorAdd_13_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_14_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.Collections.ObjectModel.Collection`1<Object>
-                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_14_Collection;
-                userType.CollectionAdd = VectorAdd_14_Collection;
-                xamlType = userType;
-                break;
-
-            case 15:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 15:   //  System.Collections.ObjectModel.Collection`1<Object>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_15_Collection;
                 userType.CollectionAdd = VectorAdd_15_Collection;
                 xamlType = userType;
                 break;
 
-            case 16:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
+            case 16:   //  Windows.UI.Xaml.Style
+                xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_17_Collection;
+                userType.CollectionAdd = VectorAdd_17_Collection;
+                xamlType = userType;
+                break;
+
+            case 18:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("RegisteredListeners");
@@ -437,7 +486,7 @@ namespace CarCosts.CarCosts_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
+            case 19:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.None);
                 userType.AddEnumValue("X", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.X);
@@ -445,66 +494,173 @@ namespace CarCosts.CarCosts_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 20:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>"));
-                userType.CollectionAdd = VectorAdd_18_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_20_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 21:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_19_Collection;
-                userType.CollectionAdd = VectorAdd_19_Collection;
+                userType.Activator = Activate_21_Collection;
+                userType.CollectionAdd = VectorAdd_21_Collection;
                 xamlType = userType;
                 break;
 
-            case 20:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
+            case 22:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 xamlType = userType;
                 break;
 
-            case 21:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 23:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>"));
-                userType.CollectionAdd = VectorAdd_21_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_23_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 22:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 24:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_22_ReadOnlyCollection;
+                userType.CollectionAdd = VectorAdd_24_ReadOnlyCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Windows.UI.Xaml.Style
+            case 25:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_25_Collection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 26:   //  Windows.UI.Xaml.ResourceDictionary
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
-                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_24_Collection;
+            case 27:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>"));
+                userType.Activator = Activate_27_LineSeries;
+                userType.AddMemberName("Points");
+                userType.AddMemberName("PolylineStyle");
+                xamlType = userType;
+                break;
+
+            case 28:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
+                userType.AddMemberName("DependentRangeAxis");
+                userType.AddMemberName("IndependentAxis");
+                userType.AddMemberName("ActualIndependentAxis");
+                userType.AddMemberName("ActualDependentRangeAxis");
+                xamlType = userType;
+                break;
+
+            case 29:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes"));
+                userType.AddMemberName("GlobalSeriesIndex");
+                xamlType = userType;
+                break;
+
+            case 30:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries"));
+                xamlType = userType;
+                break;
+
+            case 31:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series"));
+                userType.AddMemberName("IndependentValuePath");
+                userType.AddMemberName("DependentValuePath");
+                userType.AddMemberName("IsSelectionEnabled");
+                userType.AddMemberName("DependentValueBinding");
+                userType.AddMemberName("IndependentValueBinding");
+                userType.AddMemberName("ItemsSource");
+                userType.AddMemberName("AnimationSequence");
+                userType.AddMemberName("TransitionEasingFunction");
+                userType.AddMemberName("SelectedItem");
+                userType.AddMemberName("DataPointStyle");
+                userType.AddMemberName("LegendItemStyle");
+                userType.AddMemberName("TransitionDuration");
+                xamlType = userType;
+                break;
+
+            case 32:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.AddMemberName("SeriesHost");
+                userType.AddMemberName("LegendItems");
+                userType.AddMemberName("Title");
+                xamlType = userType;
+                break;
+
+            case 33:   //  String
+                xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 34:   //  Boolean
+                xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 35:   //  Windows.UI.Xaml.Media.PointCollection
+                xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 36:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 25:   //  Windows.UI.Xaml.ResourceDictionary
+            case 37:   //  System.Nullable`1<Int32>
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 38:   //  Windows.UI.Xaml.Data.Binding
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  CarCosts.MainPage
+            case 39:   //  System.Collections.IEnumerable
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 40:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Simultaneous", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.Simultaneous);
+                userType.AddEnumValue("FirstToLast", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.FirstToLast);
+                userType.AddEnumValue("LastToFirst", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.LastToFirst);
+                xamlType = userType;
+                break;
+
+            case 41:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+                xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 42:   //  TimeSpan
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 43:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
+                userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 44:   //  CarCosts.MainPage
                 userType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_MainPage;
+                userType.Activator = Activate_44_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Windows.UI.Xaml.Controls.Page
+            case 45:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Windows.UI.Xaml.Controls.UserControl
+            case 46:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::CarCosts.CarCosts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -592,105 +748,105 @@ namespace CarCosts.CarCosts_XamlTypeInfo
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)instance;
             return that.LegendItems;
         }
-        private object get_4_Chart_Axes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.Axes;
-        }
-        private void set_4_Chart_Axes(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
-        }
-        private object get_5_IAxis_Orientation(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.Orientation;
-        }
-        private void set_5_IAxis_Orientation(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
-        }
-        private object get_6_IAxis_RegisteredListeners(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.RegisteredListeners;
-        }
-        private object get_7_IAxis_DependentAxes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
-            return that.DependentAxes;
-        }
-        private object get_8_Chart_ActualAxes(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.ActualAxes;
-        }
-        private object get_9_Chart_ChartAreaStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.ChartAreaStyle;
-        }
-        private void set_9_Chart_ChartAreaStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_10_Chart_LegendItems(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendItems;
-        }
-        private object get_11_Chart_LegendStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendStyle;
-        }
-        private void set_11_Chart_LegendStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_12_Chart_LegendTitle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.LegendTitle;
-        }
-        private void set_12_Chart_LegendTitle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.LegendTitle = (global::System.Object)Value;
-        }
-        private object get_13_Chart_PlotAreaStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.PlotAreaStyle;
-        }
-        private void set_13_Chart_PlotAreaStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_14_Chart_Palette(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            return that.Palette;
-        }
-        private void set_14_Chart_Palette(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
-            that.Palette = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)Value;
-        }
-        private object get_15_Chart_Title(object instance)
+        private object get_4_Chart_Title(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Title;
         }
-        private void set_15_Chart_Title(object instance, object Value)
+        private void set_4_Chart_Title(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Title = (global::System.Object)Value;
+        }
+        private object get_5_Chart_LegendStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendStyle;
+        }
+        private void set_5_Chart_LegendStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_6_Chart_Axes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.Axes;
+        }
+        private void set_6_Chart_Axes(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
+        }
+        private object get_7_IAxis_Orientation(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.Orientation;
+        }
+        private void set_7_IAxis_Orientation(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
+        }
+        private object get_8_IAxis_RegisteredListeners(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.RegisteredListeners;
+        }
+        private object get_9_IAxis_DependentAxes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
+            return that.DependentAxes;
+        }
+        private object get_10_Chart_ActualAxes(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.ActualAxes;
+        }
+        private object get_11_Chart_ChartAreaStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.ChartAreaStyle;
+        }
+        private void set_11_Chart_ChartAreaStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_12_Chart_LegendItems(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendItems;
+        }
+        private object get_13_Chart_LegendTitle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.LegendTitle;
+        }
+        private void set_13_Chart_LegendTitle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.LegendTitle = (global::System.Object)Value;
+        }
+        private object get_14_Chart_PlotAreaStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.PlotAreaStyle;
+        }
+        private void set_14_Chart_PlotAreaStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_15_Chart_Palette(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            return that.Palette;
+        }
+        private void set_15_Chart_Palette(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
+            that.Palette = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)Value;
         }
         private object get_16_Chart_TitleStyle(object instance)
         {
@@ -701,6 +857,201 @@ namespace CarCosts.CarCosts_XamlTypeInfo
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.TitleStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_17_DataPointSeries_IndependentValuePath(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.IndependentValuePath;
+        }
+        private void set_17_DataPointSeries_IndependentValuePath(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.IndependentValuePath = (global::System.String)Value;
+        }
+        private object get_18_DataPointSeries_DependentValuePath(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.DependentValuePath;
+        }
+        private void set_18_DataPointSeries_DependentValuePath(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.DependentValuePath = (global::System.String)Value;
+        }
+        private object get_19_DataPointSeries_IsSelectionEnabled(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.IsSelectionEnabled;
+        }
+        private void set_19_DataPointSeries_IsSelectionEnabled(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.IsSelectionEnabled = (global::System.Boolean)Value;
+        }
+        private object get_20_LineSeries_Points(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
+            return that.Points;
+        }
+        private object get_21_LineSeries_PolylineStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
+            return that.PolylineStyle;
+        }
+        private void set_21_LineSeries_PolylineStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
+            that.PolylineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_22_LineAreaBaseSeries_DependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.DependentRangeAxis;
+        }
+        private void set_22_LineAreaBaseSeries_DependentRangeAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
+        }
+        private object get_23_LineAreaBaseSeries_IndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.IndependentAxis;
+        }
+        private void set_23_LineAreaBaseSeries_IndependentAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
+        }
+        private object get_24_LineAreaBaseSeries_ActualIndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.ActualIndependentAxis;
+        }
+        private object get_25_LineAreaBaseSeries_ActualDependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.ActualDependentRangeAxis;
+        }
+        private object get_26_DataPointSingleSeriesWithAxes_GlobalSeriesIndex(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes)instance;
+            return that.GlobalSeriesIndex;
+        }
+        private object get_27_DataPointSeries_DependentValueBinding(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.DependentValueBinding;
+        }
+        private void set_27_DataPointSeries_DependentValueBinding(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.DependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
+        }
+        private object get_28_DataPointSeries_IndependentValueBinding(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.IndependentValueBinding;
+        }
+        private void set_28_DataPointSeries_IndependentValueBinding(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.IndependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
+        }
+        private object get_29_DataPointSeries_ItemsSource(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.ItemsSource;
+        }
+        private void set_29_DataPointSeries_ItemsSource(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.ItemsSource = (global::System.Collections.IEnumerable)Value;
+        }
+        private object get_30_DataPointSeries_AnimationSequence(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.AnimationSequence;
+        }
+        private void set_30_DataPointSeries_AnimationSequence(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.AnimationSequence = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence)Value;
+        }
+        private object get_31_DataPointSeries_TransitionEasingFunction(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.TransitionEasingFunction;
+        }
+        private void set_31_DataPointSeries_TransitionEasingFunction(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.TransitionEasingFunction = (global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase)Value;
+        }
+        private object get_32_DataPointSeries_SelectedItem(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.SelectedItem;
+        }
+        private void set_32_DataPointSeries_SelectedItem(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.SelectedItem = (global::System.Object)Value;
+        }
+        private object get_33_DataPointSeries_DataPointStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.DataPointStyle;
+        }
+        private void set_33_DataPointSeries_DataPointStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.DataPointStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_34_DataPointSeries_LegendItemStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.LegendItemStyle;
+        }
+        private void set_34_DataPointSeries_LegendItemStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.LegendItemStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_35_DataPointSeries_TransitionDuration(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            return that.TransitionDuration;
+        }
+        private void set_35_DataPointSeries_TransitionDuration(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
+            that.TransitionDuration = (global::System.TimeSpan)Value;
+        }
+        private object get_36_Series_SeriesHost(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
+            return that.SeriesHost;
+        }
+        private void set_36_Series_SeriesHost(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
+            that.SeriesHost = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost)Value;
+        }
+        private object get_37_Series_LegendItems(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
+            return that.LegendItems;
+        }
+        private object get_38_Series_Title(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
+            return that.Title;
+        }
+        private void set_38_Series_Title(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
+            that.Title = (global::System.Object)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -734,83 +1085,83 @@ namespace CarCosts.CarCosts_XamlTypeInfo
                 xamlMember.Getter = get_3_ISeries_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Title":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Title", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_Chart_Title;
+                xamlMember.Setter = set_4_Chart_Title;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendStyle":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "LegendStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_Chart_LegendStyle;
+                xamlMember.Setter = set_5_Chart_LegendStyle;
+                break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Axes":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Axes", "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_4_Chart_Axes;
-                xamlMember.Setter = set_4_Chart_Axes;
+                xamlMember.Getter = get_6_Chart_Axes;
+                xamlMember.Setter = set_6_Chart_Axes;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.Orientation":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Orientation", "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation");
-                xamlMember.Getter = get_5_IAxis_Orientation;
-                xamlMember.Setter = set_5_IAxis_Orientation;
+                xamlMember.Getter = get_7_IAxis_Orientation;
+                xamlMember.Setter = set_7_IAxis_Orientation;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.RegisteredListeners":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "RegisteredListeners", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>");
-                xamlMember.Getter = get_6_IAxis_RegisteredListeners;
+                xamlMember.Getter = get_8_IAxis_RegisteredListeners;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.DependentAxes":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "DependentAxes", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_7_IAxis_DependentAxes;
+                xamlMember.Getter = get_9_IAxis_DependentAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ActualAxes":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "ActualAxes", "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_8_Chart_ActualAxes;
+                xamlMember.Getter = get_10_Chart_ActualAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ChartAreaStyle":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "ChartAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_Chart_ChartAreaStyle;
-                xamlMember.Setter = set_9_Chart_ChartAreaStyle;
+                xamlMember.Getter = get_11_Chart_ChartAreaStyle;
+                xamlMember.Setter = set_11_Chart_ChartAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendItems":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.Collection`1<Object>");
-                xamlMember.Getter = get_10_Chart_LegendItems;
+                xamlMember.Getter = get_12_Chart_LegendItems;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendStyle":
-                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
-                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "LegendStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_Chart_LegendStyle;
-                xamlMember.Setter = set_11_Chart_LegendStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendTitle":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "LegendTitle", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_Chart_LegendTitle;
-                xamlMember.Setter = set_12_Chart_LegendTitle;
+                xamlMember.Getter = get_13_Chart_LegendTitle;
+                xamlMember.Setter = set_13_Chart_LegendTitle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.PlotAreaStyle":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "PlotAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_Chart_PlotAreaStyle;
-                xamlMember.Setter = set_13_Chart_PlotAreaStyle;
+                xamlMember.Getter = get_14_Chart_PlotAreaStyle;
+                xamlMember.Setter = set_14_Chart_PlotAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Palette":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Palette", "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_Chart_Palette;
-                xamlMember.Setter = set_14_Chart_Palette;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Title":
-                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
-                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Title", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_Chart_Title;
-                xamlMember.Setter = set_15_Chart_Title;
+                xamlMember.Getter = get_15_Chart_Palette;
+                xamlMember.Setter = set_15_Chart_Palette;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.TitleStyle":
                 userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
@@ -818,6 +1169,152 @@ namespace CarCosts.CarCosts_XamlTypeInfo
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_16_Chart_TitleStyle;
                 xamlMember.Setter = set_16_Chart_TitleStyle;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValuePath":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "IndependentValuePath", "String");
+                xamlMember.Getter = get_17_DataPointSeries_IndependentValuePath;
+                xamlMember.Setter = set_17_DataPointSeries_IndependentValuePath;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValuePath":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "DependentValuePath", "String");
+                xamlMember.Getter = get_18_DataPointSeries_DependentValuePath;
+                xamlMember.Setter = set_18_DataPointSeries_DependentValuePath;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IsSelectionEnabled":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "IsSelectionEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_19_DataPointSeries_IsSelectionEnabled;
+                xamlMember.Setter = set_19_DataPointSeries_IsSelectionEnabled;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries.Points":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Points", "Windows.UI.Xaml.Media.PointCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_20_LineSeries_Points;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries.PolylineStyle":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "PolylineStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_21_LineSeries_PolylineStyle;
+                xamlMember.Setter = set_21_LineSeries_PolylineStyle;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.DependentRangeAxis":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_22_LineAreaBaseSeries_DependentRangeAxis;
+                xamlMember.Setter = set_22_LineAreaBaseSeries_DependentRangeAxis;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.IndependentAxis":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_23_LineAreaBaseSeries_IndependentAxis;
+                xamlMember.Setter = set_23_LineAreaBaseSeries_IndependentAxis;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.ActualIndependentAxis":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.Getter = get_24_LineAreaBaseSeries_ActualIndependentAxis;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.ActualDependentRangeAxis":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.Getter = get_25_LineAreaBaseSeries_ActualDependentRangeAxis;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes.GlobalSeriesIndex":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "GlobalSeriesIndex", "System.Nullable`1<Int32>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_26_DataPointSingleSeriesWithAxes_GlobalSeriesIndex;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValueBinding":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "DependentValueBinding", "Windows.UI.Xaml.Data.Binding");
+                xamlMember.Getter = get_27_DataPointSeries_DependentValueBinding;
+                xamlMember.Setter = set_27_DataPointSeries_DependentValueBinding;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValueBinding":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "IndependentValueBinding", "Windows.UI.Xaml.Data.Binding");
+                xamlMember.Getter = get_28_DataPointSeries_IndependentValueBinding;
+                xamlMember.Setter = set_28_DataPointSeries_IndependentValueBinding;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.ItemsSource":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "ItemsSource", "System.Collections.IEnumerable");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_29_DataPointSeries_ItemsSource;
+                xamlMember.Setter = set_29_DataPointSeries_ItemsSource;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.AnimationSequence":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "AnimationSequence", "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_30_DataPointSeries_AnimationSequence;
+                xamlMember.Setter = set_30_DataPointSeries_AnimationSequence;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.TransitionEasingFunction":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "TransitionEasingFunction", "Windows.UI.Xaml.Media.Animation.EasingFunctionBase");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_31_DataPointSeries_TransitionEasingFunction;
+                xamlMember.Setter = set_31_DataPointSeries_TransitionEasingFunction;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.SelectedItem":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_32_DataPointSeries_SelectedItem;
+                xamlMember.Setter = set_32_DataPointSeries_SelectedItem;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DataPointStyle":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "DataPointStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_33_DataPointSeries_DataPointStyle;
+                xamlMember.Setter = set_33_DataPointSeries_DataPointStyle;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.LegendItemStyle":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "LegendItemStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_34_DataPointSeries_LegendItemStyle;
+                xamlMember.Setter = set_34_DataPointSeries_LegendItemStyle;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.TransitionDuration":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "TransitionDuration", "TimeSpan");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_35_DataPointSeries_TransitionDuration;
+                xamlMember.Setter = set_35_DataPointSeries_TransitionDuration;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.SeriesHost":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "SeriesHost", "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost");
+                xamlMember.Getter = get_36_Series_SeriesHost;
+                xamlMember.Setter = set_36_Series_SeriesHost;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.LegendItems":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.ObservableCollection`1<Object>");
+                xamlMember.Getter = get_37_Series_LegendItems;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series.Title":
+                userType = (global::CarCosts.CarCosts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series");
+                xamlMember = new global::CarCosts.CarCosts_XamlTypeInfo.XamlMember(this, "Title", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_38_Series_Title;
+                xamlMember.Setter = set_38_Series_Title;
                 break;
             }
             return xamlMember;

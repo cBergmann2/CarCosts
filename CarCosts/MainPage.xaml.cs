@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 // Die Elementvorlage "Leere Seite" ist unter http://go.microsoft.com/fwlink/?LinkId=391641 dokumentiert.
 
@@ -124,6 +125,16 @@ namespace CarCosts
                     this.tbBadFuelConsumption.Text = (App.Current as App).calculations.getWorstFuelConsumption().ToString() + " l/100 km";
                     break;
             }
+
+            //update chart
+
+            List<Tuple<int, double>> myList = new List<Tuple<int, double>>();
+            int i = 0;
+            foreach(Refueling refuling in refuelings){
+                myList.Add(new Tuple<int, double>(i++, refuling.literPer100Kilometer));
+            }
+
+            (lineSeries.Series[0] as LineSeries).ItemsSource = myList;
         }
 
         #endregion

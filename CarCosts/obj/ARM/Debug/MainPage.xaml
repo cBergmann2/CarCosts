@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    xmlns:Series="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
@@ -22,6 +23,8 @@
         <Style TargetType="ListViewItem" x:Key="ListViewItem_BadEfficiency">
             <Setter Property="Background" Value="Red" />
         </Style>
+
+        <local:StringFormatConverter x:Key="StringFormatConverter" />
 
     </Page.Resources>
         
@@ -45,12 +48,40 @@
         <Pivot x:ConnectionId='3' Title="Auto Kosten" Margin="-10,-1,10,1"                                                >
             <PivotItem Name="piRefuelings"  Header="Füllungen">
                 <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                    <ListView 
-                        Name="lvRefulings" 
+                    <ListBox
+                        x:Name="lbRefulings" 
                         Height="auto" 
                         Background="Black"
                         Foreground="White"
-                        />
+                        >
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Margin="5,0,0,0"  Grid.Row="0" x:Name="tbDate"     TextWrapping="Wrap" Text="{Binding date}"    Foreground="White" FontSize="28"/>                                                                       
+                                    
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.5*"/>
+                                            <ColumnDefinition Width="0.5*"/>
+                                        </Grid.ColumnDefinitions>
+                                    
+                                        <TextBlock Margin="5,0,0,0" Grid.Column="0" x:Name="tbAmmount"  TextWrapping="Wrap" Foreground="White" FontSize="18">
+                                            <Run Text="{Binding amount, Converter={StaticResource StringFormatConverter}, ConverterParameter='{}{0:#,#.00}'}"/>
+                                            <Run Text=" l"/>
+                                        </TextBlock>                                    
+                                        <TextBlock Margin="0,0,35,0" Grid.Column="1" x:Name="tbAverageOilConsumption" HorizontalAlignment="Right" Foreground="White" FontSize="18" TextWrapping="Wrap">
+                                            <Run Text="{Binding literPer100Kilometer, Converter={StaticResource StringFormatConverter}, ConverterParameter='{}{0:#,#.00}'}"/>
+                                            <Run Text=" l/100 km" />
+                                        </TextBlock>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
                 </StackPanel>
             </PivotItem>
 
@@ -87,14 +118,24 @@
                         VerticalAlignment="Stretch"
                         Background="Red"
                         />
-                    <TextBlock FontSize="20" Margin="0,20,0,0">Graphen</TextBlock>
-                    <Button Content="l/km" HorizontalAlignment="Center"/>
-                    <Button Content="Kosten" HorizontalAlignment="Center"/>
+                    <TextBlock FontSize="20" Margin="0,20,0,0">Graph</TextBlock>
 
-                    <Charting:Chart x:Name="chart">
+                    <Charting:Chart Name="lineSeries" Height="200" Title="Chart">
+                        <Charting:Chart.LegendStyle>
+                            <Style TargetType="Control">
+                                <Setter Property="Width" Value="0" />
+                                <Setter Property="Height" Value="0" />
+                            </Style>
+                        </Charting:Chart.LegendStyle>
                         
+                        <Charting:LineSeries Margin="0" IndependentValuePath="Item1" DependentValuePath="Item2" IsSelectionEnabled="True">
+                        </Charting:LineSeries>
                     </Charting:Chart>
-                    
+
+
+
+
+
                 </StackPanel>
             </PivotItem>
         </Pivot>

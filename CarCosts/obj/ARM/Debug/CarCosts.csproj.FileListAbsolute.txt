@@ -58,3 +58,4 @@ C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\Multipl
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\WinRTXamlToolkit.pri.xml
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\CarCosts.csprojResolveAssemblyReference.cache

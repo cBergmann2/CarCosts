@@ -5,6 +5,8 @@
     xmlns:local="using:CarCosts"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    xmlns:Series="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
@@ -116,9 +118,24 @@
                         VerticalAlignment="Stretch"
                         Background="Red"
                         />
-                    <TextBlock FontSize="20" Margin="0,20,0,0">Graphen</TextBlock>
-                    <Button Content="l/km" HorizontalAlignment="Center"/>
-                    <Button Content="Kosten" HorizontalAlignment="Center"/>
+                    <TextBlock FontSize="20" Margin="0,20,0,0">Graph</TextBlock>
+
+                    <Charting:Chart Name="lineSeries" Height="200" Title="Chart">
+                        <Charting:Chart.LegendStyle>
+                            <Style TargetType="Control">
+                                <Setter Property="Width" Value="0" />
+                                <Setter Property="Height" Value="0" />
+                            </Style>
+                        </Charting:Chart.LegendStyle>
+                        
+                        <Charting:LineSeries Margin="0" IndependentValuePath="Item1" DependentValuePath="Item2" IsSelectionEnabled="True">
+                        </Charting:LineSeries>
+                    </Charting:Chart>
+
+
+
+
+
                 </StackPanel>
             </PivotItem>
         </Pivot>

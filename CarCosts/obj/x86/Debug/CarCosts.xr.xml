@@ -37,8 +37,8 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Header" />
       <RootProperty Name="InputScope" />
-      <RootProperty Name="IsReadOnly" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="IsReadOnly" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
@@ -53,6 +53,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Name" />
       <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Name" />
@@ -67,6 +68,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsChecked" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="CarCosts.CdAddFuel" />
     <RootType FullName="CarCosts.CdEditRefueling" />
@@ -114,6 +116,23 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Title" />
+      <RootProperty Name="LegendStyle" />
+      <RootProperty Name="Series" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IndependentValuePath" />
+      <RootProperty Name="DependentValuePath" />
+      <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="Height" />

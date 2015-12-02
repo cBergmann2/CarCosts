@@ -25,22 +25,22 @@
             </Grid.ColumnDefinitions>
 
             <!-- Date -->
-            <DatePicker Grid.Row="0" Grid.Column="0" Name="date" Header="Datum"/>
+            <DatePicker Grid.Row="0" Grid.Column="0" Name="date" Header="Datum"  Margin="0,0,0,0"/>
             <Button Grid.Row="0" Grid.Column="1" Name="bToday" Content="Heute" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
 
             <!-- Amuount-->
-            <TextBox Grid.Row="1" Grid.Column="0" Name="amount" Header="Menge (l)" InputScope="Number"/>
-            <CheckBox Grid.Row="1" Grid.Column="1" Name="completeFilled" Content="vollgetankt" VerticalAlignment="Bottom" HorizontalAlignment="Right" IsChecked="True"/>
+            <TextBox Grid.Row="1" Grid.Column="0" Name="amount" Header="Menge (l)" InputScope="Number" Margin="0,0,0,0"/>
+            <CheckBox Grid.Row="1" Grid.Column="1" Name="completeFilled" Content="vollgetankt" VerticalAlignment="Bottom" HorizontalAlignment="Right" IsChecked="True"  Margin="0,0,0,0"/>
         </Grid>
 
         <!-- Cost per Liter -->
-        <TextBox Name="tbCosts" Header="Preis (€/l)" InputScope="Number"/>
+        <TextBox Name="tbCosts" Header="Preis (€/l)" InputScope="Number" Margin="0,5,0,0"/>
 
         <!-- Sum of Cost -->
-        <TextBox Name="tbSumCosts" Header="Summe" IsReadOnly="True" InputScope="Number"/>
+        <!-- <TextBox Name="tbSumCosts" Header="Summe" IsReadOnly="True" InputScope="Number"/> -->
 
         <!-- Distance -->
-        <TextBox Name="tbDistance" Header="Gefahrene km" InputScope="Number"/>
+        <TextBox Name="tbDistance" Header="Gefahrene km" InputScope="Number"  Margin="0,5,0,0"/>
 
     </StackPanel>
 </ContentDialog>
