@@ -91,6 +91,9 @@
     </Compile>
     <Compile Include="DatabaseHelperClass.cs" />
     <Compile Include="DataManager.cs" />
+    <Compile Include="GraphicalEvaluation.xaml.cs">
+      <DependentUpon>GraphicalEvaluation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -128,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CdEditRefueling.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GraphicalEvaluation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

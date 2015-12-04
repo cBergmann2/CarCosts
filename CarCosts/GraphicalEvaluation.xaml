@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="CarCosts.GraphicalEvaluation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CarCosts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    xmlns:Series="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot Title="Graphische Auswertung" Margin="-10,-1,10,1" SelectionChanged="pivotElementSelectionChanged">
+
+            <PivotItem Header="Dieser Monat">
+                <Charting:Chart Name="lineSeries" Title="Chart" Margin="0,0,0,155">
+                    <Charting:Chart.LegendStyle>
+                        <Style TargetType="Control">
+                            <Setter Property="Width" Value="0" />
+                            <Setter Property="Height" Value="0" />
+                        </Style>
+                    </Charting:Chart.LegendStyle>
+                    <Charting:LineSeries Margin="0" IndependentValuePath="Item1" DependentValuePath="Item2" IsSelectionEnabled="True">
+                    </Charting:LineSeries>
+                </Charting:Chart>
+                
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

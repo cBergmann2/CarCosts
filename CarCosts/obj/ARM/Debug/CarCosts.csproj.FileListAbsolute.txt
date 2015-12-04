@@ -59,3 +59,7 @@ C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\WinRTXa
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\ProjectArchitectures.txt
 C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\CarCosts.csprojResolveAssemblyReference.cache
+C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\GraphicalEvaluation.g.i.cs
+C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\GraphicalEvaluation.g.cs
+C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\GraphicalEvaluation.xaml
+C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\obj\ARM\Debug\GraphicalEvaluation.xbf
