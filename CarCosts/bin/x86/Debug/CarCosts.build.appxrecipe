@@ -70,11 +70,11 @@
     <AppxPackagedFile Include="C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\bin\x86\Debug\CdEditFuel.xbf">
+      <PackagePath>CdEditFuel.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\bin\x86\Debug\CdAddFuel.xbf">
       <PackagePath>CdAddFuel.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\bin\x86\Debug\CdEditRefueling.xbf">
-      <PackagePath>CdEditRefueling.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christoph\Documents\Development\CarCosts\CarCosts\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

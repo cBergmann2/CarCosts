@@ -83,11 +83,11 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Calculations.cs" />
+    <Compile Include="CdEditFuel.xaml.cs">
+      <DependentUpon>CdEditFuel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CdAddFuel.xaml.cs">
       <DependentUpon>CdAddFuel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CdEditRefueling.xaml.cs">
-      <DependentUpon>CdEditRefueling.xaml</DependentUpon>
     </Compile>
     <Compile Include="DatabaseHelperClass.cs" />
     <Compile Include="DataManager.cs" />
@@ -123,11 +123,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CdAddFuel.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="CdEditFuel.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="CdEditRefueling.xaml">
+    <Page Include="CdAddFuel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -121,7 +121,8 @@ namespace CarCosts
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
             {
-                var existingRefueling = dbConn.Query<Refueling>("select * from Refueling where Id =" + refuling.Id).FirstOrDefault();
+
+                var existingRefueling = dbConn.Query<Refueling>("select * from Refueling where Id =" + refuling.Id).FirstOrDefault(); 
                 if (existingRefueling != null)
                 {
                     //TO DO: change
@@ -132,7 +133,7 @@ namespace CarCosts
                     existingRefueling.isCompleteFilled = refuling.isCompleteFilled;
                     dbConn.RunInTransaction(() =>
                     {
-                        dbConn.Update(existingRefueling);
+                        dbConn.Update(refuling);
                     });
                 }
             }

@@ -165,11 +165,26 @@ namespace CarCosts
             flyoutBase.ShowAt(senderElement);
         }
 
-        private void bEditRefueling_Click(object sender, RoutedEventArgs e)
+        private async void bEditRefueling_Click(object sender, RoutedEventArgs e)
         {
-            
+            CdEditFuel cdEditFuel = new CdEditFuel(currentSelectedRefueling);
+            await cdEditFuel.ShowAsync();
+
+            if (cdEditFuel.result == AddFuelResult.AddFuel)
+            {
+                //List of refulings is grown up
+                //update statistcal data
+                this.updateRefulings();
+                this.updateStatistics();
+            }
         }
 
+        /// <summary>
+        /// Deletes the selected refueling.
+        /// Also updates the list of refuelings and the statistics.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bDeleteRefueling_Click(object sender, RoutedEventArgs e)
         {
             DataManager dataManager = new DataManager();
