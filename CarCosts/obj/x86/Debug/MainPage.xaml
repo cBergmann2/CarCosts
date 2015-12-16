@@ -54,9 +54,22 @@
                         Background="Black"
                         Foreground="White"
                         >
+                        
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <Grid>
+                                <Grid x:ConnectionId='4'                                   VerticalAlignment="Stretch">
+
+                                    <FlyoutBase.AttachedFlyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem x:ConnectionId='5' x:Name="EditButton"
+                                                Text="Edit"
+                                                                            />
+                                             <MenuFlyoutItem x:ConnectionId='6' x:Name="DeleteButton"
+                                                Text="Delete"
+                                                                              />
+                                        </MenuFlyout>
+                                    </FlyoutBase.AttachedFlyout>
+
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>

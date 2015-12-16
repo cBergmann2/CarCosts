@@ -24,6 +24,9 @@ namespace CarCosts
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private Refueling currentSelectedRefueling; 
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -150,6 +153,29 @@ namespace CarCosts
                     this.bEditRefuelings.Visibility = Visibility.Collapsed;
                     break;
             }
+        }
+
+        private void lbItemRefueling_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            FrameworkElement senderElement = sender as FrameworkElement;
+            // If you need the clicked element:
+            currentSelectedRefueling = senderElement.DataContext as Refueling;
+
+            FlyoutBase flyoutBase = FlyoutBase.GetAttachedFlyout(senderElement);
+            flyoutBase.ShowAt(senderElement);
+        }
+
+        private void bEditRefueling_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void bDeleteRefueling_Click(object sender, RoutedEventArgs e)
+        {
+            DataManager dataManager = new DataManager();
+            dataManager.deleteRefueling(currentSelectedRefueling.Id);
+            this.updateRefulings();
+            this.updateStatistics();
         }
 
         

@@ -54,9 +54,22 @@
                         Background="Black"
                         Foreground="White"
                         >
+                        
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <Grid>
+                                <Grid Holding="lbItemRefueling_Holding" VerticalAlignment="Stretch">
+
+                                    <FlyoutBase.AttachedFlyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem x:Name="EditButton"
+                                                Text="Edit"
+                                                Click="bEditRefueling_Click"/>
+                                             <MenuFlyoutItem x:Name="DeleteButton"
+                                                Text="Delete"
+                                                Click="bDeleteRefueling_Click"/>
+                                        </MenuFlyout>
+                                    </FlyoutBase.AttachedFlyout>
+
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
